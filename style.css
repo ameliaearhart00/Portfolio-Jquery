@@ -1,0 +1,340 @@
+/* AUBREY MANSON PORTFOLIO
+STYLESHEET */
+
+/* ****************************** */
+/* Page Container */
+/* ****************************** */
+
+.container {
+  margin-top: 10px;
+}
+
+/* ****************************** */
+/* Navigation Bar */
+/* ****************************** */
+
+nav {
+  background-color: lightpink;
+  height: 90px;
+  /* padding: 40px; */
+}
+
+nav a {
+  color: green;
+  font: Ubuntu, 24px;
+  padding: 30px;
+  margin: auto;
+  display: inline-block;
+}
+
+/* this pseudo class will change the link tag <a> color when you hover on it */
+a:hover {
+  color: lightblue;
+}
+
+a:active {
+  color: yellow;
+}
+
+@media (max-width: 800px) {
+  nav {
+    display: none;
+    padding: 5px;
+  }
+  nav a {
+    display: none;
+  }
+}
+
+/* ****************************** */
+/* Page Hero/Jumbotron */
+/* ****************************** */
+
+.jumbotron-1 {
+  background-color: yellow;
+  height: 500px;
+  margin-top: 40px;
+  padding: 30px;
+}
+
+.jumbotron-h1 {
+  font-size: 54px;
+  padding-top: 50px;
+  padding-left: 11px;
+}
+
+.jumbotron-text {
+  padding: 15px;
+  text: center;
+}
+
+.social-icons i {
+  font-size: 36px;
+  color: black;
+  padding-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron-h1 {
+    font-size: 32px;
+    padding-top: 50px;
+    padding-left: 15px;
+    text: center;
+  }
+  .jumbotron-text {
+    margin-top: 20px;
+  }
+}
+
+/* ****************************** */
+/* Headings and Body Text */
+/* ****************************** */
+
+h1 {
+  font-family: Helvetica Neue, Open Sans, Sans Serif;
+  font-weight: 200;
+  font-size: 48px;
+  text-align: left;
+}
+
+h2 {
+  font-family: Ubuntu, Open Sans, Sans Serif;
+  font-size: 36px;
+  text-align: left;
+}
+
+h3 {
+  font-family: Ubuntu, Open Sans, Sans Serif;
+  font-size: 24px;
+  text-align: left;
+}
+
+h4 {
+  font-family: Helvetica Neue, Open Sans, Sans Serif;
+  font-weight: thin;
+  font-size: 20px;
+}
+
+h5 {
+  font-family: Ubuntu, Open Sans, Sans Serif;
+  font-size: 16px;
+}
+
+p {
+  font-family: Helvetica Neue, Open Sans, Sans Serif;
+  font-weight: thin;
+  font-size: 16px;
+  text-align: left;
+}
+
+a {
+  font-family: Ubuntu, Open Sans, Sans Serif;
+  font-size: 18px;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 24px;
+    padding-top: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+}
+
+/* ****************************** */
+/* Buttons */
+/* ****************************** */
+
+.btn-card {
+  /* height: 50px; */
+  border-radius: 5px;
+  border-color: gray;
+  background-color: gray;
+  margin: 0 auto;
+  display: inline-block;
+  max-width: 200px;
+  font-style: Ubuntu;
+  font-size: 18px;
+}
+
+.btn {
+  /* height: 50px; */
+  border-radius: 5px;
+  border-color: gray;
+  background-color: gray;
+  margin: 0 auto;
+  display: block;
+  max-width: 200px;
+  font-style: Ubuntu;
+  font-size: 18px;
+}
+
+.btn-text {
+  align-content: center;
+}
+
+.btn:hover {
+  background: #5ed0ec;
+  color: white;
+}
+
+.btn-card:hover {
+  background: #5ed0ec;
+  color: white;
+}
+
+.btn:disabled {
+  background: gray;
+  color: white;
+}
+
+/* ****************************** */
+/* Cards */
+/* ****************************** */
+
+.portfolio-container {
+  background: white;
+  margin-bottom: 100px;
+}
+
+.portfolio-summary-text {
+  padding-bottom: 50px;
+}
+
+.col-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.card {
+  display: block;
+  height: 450px;
+  border-radius: 15px;
+  flex: flex;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.card-title {
+  height: 30px;
+  text-align: left;
+}
+
+/* .card-text {
+  align: center;
+} */
+
+/* display: block;
+    text-align: center;
+    width: 6em;
+    height: 6em;
+    border-radius: 10%;
+    margin: 0.5em;
+    border: 1px solid white;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.4) */
+
+/* .doi-icons img {
+        margin-top: 40px;
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        justify-content: flex-start; */
+
+/* ****************************** */
+/* Contact*/
+/* ****************************** */
+
+.jumbotron-about {
+  height: 500px;
+}
+
+.container-about {
+  background-color: lightblue;
+  height: 440px;
+  padding: 30px;
+}
+
+.row-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+
+.img-profile {
+  height: 400px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.jumbotron-about p {
+  font-size: 16px;
+  padding: 10px;
+  margin: 15px;
+}
+
+.jumbotron-about h1 {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .jumbotron-about {
+    background-color: lightblue;
+    margin-top: 10px;
+    height: 925px;
+  }
+  .container-about {
+    background-color: lightblue;
+    margin-top: 10px;
+  }
+  .row-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .img-profile {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* ****************************** */
+/* Footer */
+/* ****************************** */
+
+.footer {
+  background-color: lightpink;
+  height: 140px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.footer h5 {
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+.footer h4 {
+  padding-left: 10px;
+}
+
+/* footer iconography */
+
+.social-icons-footer i {
+  font-size: 18px;
+  color: black;
+  padding: 10px;
+}
+.social-icons i:hover {
+  color: #5ed0ec;
+}
