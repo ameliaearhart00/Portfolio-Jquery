@@ -38,29 +38,35 @@
   <!-- ********************************************************* -->
   <!-- ********************************************************* -->
   <!-- ********************************************************* -->
-  <body>
+  <body data-spy="scroll" data-target="#navbar-scroll">
     <!-- ********************************************************* -->
     <!-- Begin Navigation Section -->
 
-    <nav class="nav fixed-top">
+    <nav class="navbar fixed-top">
+      <a class="navbar-brand" href="#">
+        <img
+          src="images/IAM-logo-v1_web.png"
+          width="75px"
+          height="75px"
+          alt="logo homepage link"
+        />
+      </a>
       <button class="hamburger hamburger--spin-r" type="button">
         <span class="hamburger-box">
           <span class="hamburger-inner"></span>
         </span>
       </button>
-      <div class="nav-menu">
-        <a class="navbar-brand" href="#">
-          <img
-            src="images/IAM-logo-v1_web.png"
-            width="75px"
-            height="75px"
-            class="d-inline-block align-center"
-            alt="logo homepage link"
-          />
-        </a>
-
-        <a href="#About">About</a> <a href="#Projects">Projects</a>
-        <a href="#Contact">Contact</a>
+      <div id="navbar-scroll">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item"><a class="nav-link" href="#About">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Work">Work</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Process">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
@@ -179,7 +185,7 @@
     <div class="container">
       <!-- ********************************************************* -->
       <!--  Begin Cards Section -->
-      <div id="Projects" class="portfolio">
+      <div id="Work" class="portfolio">
         <h1 class="text-left">Work</h1>
         <hr class="my-2" />
         <p class="portfolio-summary-text">
@@ -488,6 +494,7 @@
     <!-- ********************************************************* -->
 
     <!-- Javascript -->
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -503,5 +510,7 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+
+    <script src="form.js"></script>
   </body>
 </html>

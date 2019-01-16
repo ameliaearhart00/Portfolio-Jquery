@@ -15,3 +15,5 @@ $("sendEmail").click(function() {
 // Set HTML of .modal-body
 
 // Clear all fields in form
+
+$("body").scrollspy({ target: "#navbar-scroll" });
