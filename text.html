@@ -108,7 +108,12 @@
         </p>
 
         <p class="jumbotron-text">
-          <a class="btn btn-text btn-primary btn-lg" href="#" role="button"
+          <a
+            class="btn btn-text btn-primary btn-lg"
+            href="#"
+            role="button"
+            data-toggle="modal"
+            data-target="#getStartedModal"
             >Let's Start This!</a
           >
         </p>
@@ -116,6 +121,73 @@
     </div>
     <!-- End Jumbotron Section -->
     <!-- ********************************************************* -->
+
+    <!-- ********************************************************* -->
+    <!-- 'Let's Get Started' Button Modal -->
+    <!-- ********************************************************* -->
+    <div class="modal fade" id="getStartedModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h5 class="modal-title">
+              To get started, please fill in the information below and describe
+              the project you are looking to accomplish. I'll be in contact
+              within 1-2 business days.
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <!-- Modal Body with Form -->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Your Name</label>
+                <input type="text" class="form-control" id="inputName" />
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Contact Email Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-described
+                  by="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Page Container -->
     <div class="container">
@@ -262,6 +334,149 @@
     </div>
 
     <!-- ********************************************************* -->
+    <!-- Email Send Modal -->
+    <!-- ********************************************************* -->
+    <!-- <div class="modal fade" id="emailModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content"> -->
+    <!-- Modal Header -->
+    <!-- <div class="modal-header">
+            <h5 class="modal-title">
+              To get started, please fill in the information below and describe
+              the project you are looking to accomplish. I'll be in contact
+              within 1-2 business days.
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div> -->
+
+    <!-- Modal Body with Form -->
+    <!-- <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="inputName">Your Name</label>
+                <input type="text" class="form-control" id="inputName" />
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Contact Email Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-described
+                  by="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="message-text" class="col-form-label"
+                  >Message:</label
+                >
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div> -->
+
+    <!-- Modal Footer -->
+    <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+
+    <!-- Add a Form with a "Send Email" Button -->
+    <!-- <form class="m-4" style="width: 40%">
+      <div class="form-group">
+        <label for="firstName">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="firstName"
+          placeholder="First Name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="lastName">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="lastName"
+          placeholder="Last Name"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="eMail">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="eMail"
+          placeholder="Email"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="5"></textarea>
+      </div> -->
+
+    <!-- Button that triggers modal -->
+    <!-- <button
+        id="sendEmail"
+        type="button"
+        class="btn btn-primary"
+        data-toggle="modal"
+        data-target="#sentMessage"
+      >
+        Send Email
+      </button>
+    </form> -->
+
+    <!-- Modal -->
+    <!-- <div
+      class="modal fade"
+      id="sentMessage"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button
+              id="confirmDismiss"
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- ********************************************************* -->
     <!-- Begin Footer Section -->
     <div id="Footer" class="footer">
       <div>
@@ -285,5 +500,22 @@
     <!-- ********************************************************* -->
 
     <!-- ********************************************************* -->
+
+    <!-- Javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
