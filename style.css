@@ -67,11 +67,10 @@ a {
 /* Buttons */
 /* ****************************** */
 
-.btn {
-  /* height: 50px; */
+.btn-outline-primary {
   border-radius: 5px;
-  border-color: gray;
-  background-color: gray;
+  border: 2px solid green;
+  color: green;
   margin: 0 auto;
   display: block;
   max-width: 200px;
@@ -79,15 +78,10 @@ a {
   font-size: 18px;
 }
 
-.btn-text {
-  align-content: center;
-}
-
-.btn-card {
-  /* height: 50px; */
+.btn-outline-success {
   border-radius: 5px;
-  border-color: gray;
-  background-color: gray;
+  border: 2px solid green;
+  color: green;
   margin: 0 auto;
   display: inline-block;
   max-width: 200px;
@@ -101,12 +95,22 @@ a {
   color: white;
 }
 
-.btn-card:hover {
-  background: #5ed0ec;
+.btn:active {
+  background: pink;
   color: white;
 }
 
 .btn:disabled {
+  background: gray;
+  color: white;
+}
+
+.btn-outline-success:hover {
+  background: #5ed0ec;
+  color: white;
+}
+
+.btn-outline-success:disabled {
   background: gray;
   color: white;
 }
@@ -188,7 +192,7 @@ a:active {
     display: none;
     padding: 5px;
   }
-  nav a {
+  nav ul li a {
     display: none;
   }
 }
