@@ -10,7 +10,7 @@ STYLESHEET */
 /* ****************************** */
 
 h1 {
-  font-family: Helvetica Neue, Open Sans, Sans Serif;
+  font-family: Finger Paint, Helvetica Neue, Open Sans, Sans Serif;
   font-weight: 200;
   font-size: 48px;
   text-align: left;
@@ -47,7 +47,7 @@ p {
 }
 
 a {
-  font-family: Ubuntu, Open Sans, Sans Serif;
+  font-family: Finger Paint, Ubuntu, Open Sans, Sans Serif;
   font-size: 18px;
 }
 
@@ -74,7 +74,7 @@ a {
   margin: 0 auto;
   display: block;
   max-width: 200px;
-  font-style: Ubuntu;
+  font-style: Finger Paint, Ubuntu;
   font-size: 18px;
 }
 
@@ -85,7 +85,7 @@ a {
   margin: 0 auto;
   display: inline-block;
   max-width: 200px;
-  font-style: Ubuntu;
+  font-style: Finger Paint, Ubuntu;
   font-size: 18px;
 }
 
@@ -317,28 +317,38 @@ a:active {
 /* Page Hero/Jumbotron */
 /* ****************************** */
 
-.jumbotron-1 {
+.jumbotron {
   background-color: yellow;
-  height: 500px;
-  margin-top: 40px;
+  height: 800px;
+  margin-top: 0px;
+  padding: 30px;
+}
+.jumbotron-padding {
+  background-color: white;
+  height: 580px;
+  margin: 100px;
   padding: 30px;
 }
 
-.jumbotron-h1 {
-  font-size: 54px;
-  padding-top: 50px;
-  padding-left: 11px;
-}
+@media (max-width: 900px) {
+  .jumbotron-h1 {
+    font-size: 54px;
+    padding-top: 50px;
+    padding-left: 11px;
+    text-align: center;
+  }
 
-.jumbotron-text {
-  padding: 15px;
-  text: center;
-}
+  .jumbotron-text {
+    padding: 15px;
+    text-align: center;
+  }
 
-.social-icons i {
-  font-size: 36px;
-  color: black;
-  padding-right: 10px;
+  .social-icons i {
+    font-size: 36px;
+    color: black;
+    padding: 10px;
+    text-align: center;
+  }
 }
 
 /* Jumbotron text becomes smaller for mobile and tablet screens */
@@ -351,6 +361,12 @@ a:active {
   }
   .jumbotron-text {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .jumbotron-padding {
+    margin: 50px;
   }
 }
 
